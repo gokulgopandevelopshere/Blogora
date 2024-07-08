@@ -6,7 +6,7 @@ import { set } from 'mongoose';
 import axios from 'axios';
 import { toast } from 'react-toastify';
 
-function page() {
+function Page() {
 
   const [image, setImage] = useState(false);
   const [data, setData] = useState({
@@ -92,4 +92,4 @@ function page() {
   )
 }
 
-export default page
+export default Page

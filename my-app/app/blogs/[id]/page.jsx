@@ -6,7 +6,7 @@ import { assets } from '@/Assets/assets'
 import Footer from '@/Components/footer'
 import Link from 'next/link'
 import axios from 'axios'
-function page ({params}) {
+function Page ({params}) {
 
 
   const [data,setData] = useState(null)
@@ -76,4 +76,4 @@ function page ({params}) {
   )
 }
 
-export default page
+export default Page

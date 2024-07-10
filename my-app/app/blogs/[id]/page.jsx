@@ -9,7 +9,7 @@ import axios from 'axios'
 function Page ({params}) {
 
 
-  const [data,setData] = useState(null)
+  const [data,setData] = useState(null);
 
   const fetchBlogData = async () =>{
     const response = await axios.get('/api/blog',{
@@ -17,16 +17,13 @@ function Page ({params}) {
         id:params.id
       }
     })
-
-    setData(response.data)
-
-     
+    setData(response.data);    
 
   }
 
   useEffect(() => {
     fetchBlogData();
-  },[params.id,fetchBlogData])
+  },[])
 
 
   return (data ?<>

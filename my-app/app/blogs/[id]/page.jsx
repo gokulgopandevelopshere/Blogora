@@ -12,13 +12,19 @@ function Page ({params}) {
   const [data,setData] = useState(null);
 
   const fetchBlogData = async () =>{
+    try{
     const response = await axios.get('/api/blog',{
       params: {
         id:params.id
       }
     })
+    
     setData(response.data);    
+    console.log(response.data.blogs);
+    console.log(response.data);
 
+  }}catch(error){
+    console.log(error.response.data);
   }
 
   useEffect(() => {

@@ -1,4 +1,3 @@
-'use client'
 import { blog_data } from '@/Assets/assets'
 import React,{useState,useEffect} from 'react'
 import Image from 'next/image'

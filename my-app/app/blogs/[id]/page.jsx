@@ -26,7 +26,7 @@ function Page ({params}) {
 
   useEffect(() => {
     fetchBlogData();
-  },[params.id])
+  },[params.id,fetchBlogData])
 
 
   return (data ?<>
